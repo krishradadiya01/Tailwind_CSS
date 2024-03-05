@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+
+    <div class="flex flex-col gap-[50px]">
+    <div class="mx-auto flex justify-center bg-green-300 w-[100%]">
+        Accessibility
+    </div>
+
+    <div class="bg-sky-200 mx-auto flex justify-center gap-10 w-[100%]">
+      <label>
+        <input type="checkbox" checked> Cricket
+      </label>
+      <label>
+        <input type="checkbox" class="accent-pink-500" checked> Football
+      </label>
+      <label>
+        <input type="checkbox" class="accent-emerald-500/25" checked> Hockey
+      </label>
+    </div>
+
+    <div class="bg-pink-200 mx-auto flex justify-center w-[100%]">
+        <select class="bg-yellow-300">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+        </select>
+    </div>
+
+    <div class="mx-auto flex justify-center gap-10 flex-wrap grid-rows-4">
+    <button type="button" class="cursor-pointer bg-red-500 h-[50px] w-52">
+        Submit
+    </button>
+    <button type="button" class="cursor-progress  bg-blue-300  h-[50px] grid-rows-4 w-52">
+        Saving...
+    </button>
+    <button type="button" disabled class="cursor-not-allowed bg-green-400 h-[50px] grid-rows-4 w-52">
+        Confirm
+    </button>
+    </div>
+
+    <div class="bg-red-600 flex justify-center">
+       <textarea class="caret-pink-500 w-52 mx-auto p-3"></textarea>
+    </div>
+
+    <p class="text-center font-bold text-[20px] py-2">User Select</p>
+    <div class="flex flex-col p-5 bg-slate-200">
+        <h1 class="font-bold text-xl py-3">select-auto</h1>
+        <p class="bg-slate-300 p-2 select-auto">Apple Inc. is an American multinational technology company headquartered in
+            Cupertino, California.</p>
+        <h1 class="font-bold text-xl py-3">select-text</h1>
+        <p class="bg-slate-300 p-2 select-text">Apple Inc. is an American multinational technology company headquartered in
+            Cupertino, California.</p>
+        <h1 class="font-bold text-xl py-3">select-all</h1>
+        <p class="bg-slate-300 p-2 select-all">Apple Inc. is an American multinational technology company headquartered in
+            Cupertino, California.</p>
+        <h1 class="font-bold text-xl py-3">select-none</h1>
+        <p class="bg-slate-300 p-2 select-none">Apple Inc. is an American multinational technology company headquartered in
+            Cupertino, California.</p>
+    </div>
+
+    </div>
+</body>
+</html>
